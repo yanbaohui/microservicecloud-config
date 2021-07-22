@@ -15,7 +15,7 @@ mybatis:
 spring:
    profiles: dev
    application:
-    name: microservicecloud-dept 
+    name: microservicecloud-config-dept-client 
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
@@ -29,7 +29,7 @@ spring:
       max-wait-millis: 200                                  # 等待连接获取的最大超时时间
       
 eureka:
-  client: #客户端注册进eureka服务列表内
+  client: 						    #客户端注册进eureka服务列表内
     service-url: 
      defaultZone: http://eureka7001.com:7001/eureka     
   instance:
@@ -56,7 +56,7 @@ mybatis:
 spring:
    profiles: test
    application:
-    name: microservicecloud-dept 
+    name: microservicecloud-config-dept-client 
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
@@ -70,7 +70,7 @@ spring:
       max-wait-millis: 200                                  # 等待连接获取的最大超时时间
       
 eureka:
-  client: #客户端注册进eureka服务列表内
+  client: 						    #客户端注册进eureka服务列表内
     service-url: 
      defaultZone: http://eureka7001.com:7001/eureka     
   instance:
